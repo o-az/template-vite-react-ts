@@ -24,13 +24,30 @@
     "noFallthroughCasesInSwitch": true,
     "useUnknownInCatchVariables": true,
     "allowSyntheticDefaultImports": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "forceConsistentCasingInFileNames": true,
     "noPropertyAccessFromIndexSignature": true,
-    "types": ["vite/client", "typed-query-selector/strict"],
+    "types": [
+      "vite/client",
+      "typed-query-selector/strict"
+    ],
     "baseUrl": "."
   },
-  "include": ["src", "test"],
-  "files": ["reset.d.ts", "biome.json", "vite.config.ts", "environment.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src",
+    "test"
+  ],
+  "files": [
+    "reset.d.ts",
+    "vite.config.ts",
+    "environment.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

@@ -44,13 +44,9 @@ jobs:
         shell: bash
         run: pnpm install --frozen-lockfile
 
-      - name: '🧹 Lint'
+      - name: '🧹 Format & Lint'
         shell: bash
-        run: pnpm lint
-
-      - name: '🧹 Format'
-        shell: bash
-        run: pnpm format
+        run: pnpm dlx @biomejs/biome check . --error-on-warnings
 
       - name: '🧪 Typecheck'
         shell: bash

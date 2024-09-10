@@ -200,3 +200,4 @@ temp
 *.lock
 *.lock.yaml
 *.lock.yml
+.swc

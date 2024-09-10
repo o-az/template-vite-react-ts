@@ -1,6 +1,6 @@
 _NOTE: You are welcome to ask any questions if anything is unclear. Also feel free to post a discussion_
 
-# React 19x Vite x SWC x TailwindCSS v4 x TypeScript Template
+# React 19 x Vite x SWC x TailwindCSS v4 x TypeScript Template
 
 ---
 
@@ -8,14 +8,10 @@ _NOTE: You are welcome to ask any questions if anything is unclear. Also feel fr
 
 - `React` 19 (with [`swc`](https://github.com/vitejs/vite-plugin-react-swc))
 - `vite`
-- `TailwindCSS v4`
+- `TailwindCSS` v4
 - `TypeScript`
 - `pnpm` package manager
 - `Biome` for linting and formatting
-
-### - VSCode ready (see `.vscode`)
-
----
 
 ## Getting started
 
@@ -31,7 +27,7 @@ git clone https://github.com/o-az/template-vite-react-ts.git && cd template-vite
 pnpm install
 ```
 
-### Copy `.env.example` to `.env` and modify as needed
+### [Optional] Copy `.env.example` to `.env` and modify as needed
 
 ```sh
 cp .env.example .env
@@ -41,10 +37,4 @@ cp .env.example .env
 
 ```sh
 pnpm dev
-```
-
-### run tests
-
-```sh
-pnpm test
 ```

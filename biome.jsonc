@@ -19,8 +19,12 @@
       "*.css"
     ],
     "ignoreUnknown": true,
-    "ignore": ["node_modules", "dist"]
+    "ignore": [
+      "node_modules",
+      "dist"
+    ]
   },
+
   "organizeImports": {
     "enabled": false
   },
@@ -57,7 +61,11 @@
       "*.jsonc",
       "*.css"
     ],
-    "ignore": ["node_modules", "dist", "_"]
+    "ignore": [
+      "_",
+      "dist",
+      "node_modules"
+    ]
   },
   "linter": {
     "enabled": true,
@@ -112,13 +120,15 @@
       "allowComments": true
     },
     "formatter": {
+      "lineWidth": 1, // to have one item per line in json/jsonc files
       "enabled": true,
-      "lineWidth": 100,
       "indentWidth": 2
     }
   },
   "javascript": {
-    "globals": ["NodeJS"],
+    "globals": [
+      "NodeJS"
+    ],
     "parser": {
       "unsafeParameterDecoratorsEnabled": true
     },
@@ -137,7 +147,9 @@
   },
   "overrides": [
     {
-      "include": ["environment.d.ts"],
+      "include": [
+        "environment.d.ts"
+      ],
       "linter": {
         "rules": {
           "style": {

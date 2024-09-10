@@ -9,8 +9,8 @@ export function App() {
         <a
           target='_blank'
           rel='noreferrer'
-          className='pr-2 text-blue-600 text-xs bg-amber-200 h-full'
           href='https://github.com/o-az/template-vite-react-ts'
+          className='h-full bg-amber-200 pr-2 text-blue-600 text-xs'
         >
           source code
         </a>
