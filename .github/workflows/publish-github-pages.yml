@@ -1,15 +1,18 @@
-name: 'Checks'
-
-permissions:
-  contents: 'write'
+name: 'Publish to GitHub Pages'
 
 on:
-  pull_request:
   workflow_dispatch:
   push:
+    branches:
+      - main
+
+permissions:
+  pages: write
+  contents: read
+  id-token: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: 'pages'
   # if you want to cancel runs when a new one is queued, set this to true
   cancel-in-progress: false
 
@@ -22,8 +25,10 @@ env:
   ACTIONS_RUNNER_DEBUG: true
 
 jobs:
-  checks:
-    if: ${{ !contains(github.event.head_commit.message, '[skip-checks]') }}
+  deploy:
+    environment:
+      name: 'github-pages'
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ['ubuntu-latest']
     steps:
       - name: 🔑 Checkout
@@ -37,25 +42,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
           cache: 'pnpm'
+          node-version: 'lts/*'
 
       - name: Install Dependencies
         shell: bash
         run: pnpm install --frozen-lockfile
 
-      - name: '🧹 Format & Lint'
-        shell: bash
-        run: pnpm dlx @biomejs/biome check . --error-on-warnings
-
-      - name: '🧪 Typecheck'
-        shell: bash
-        run: pnpm typecheck
-
       - name: '🔧 Build'
         shell: bash
         run: pnpm run build
 
-      - name: '🧪 Test'
-        shell: bash
-        run: pnpm test
+      - name: 'Setup Pages'
+        uses: actions/configure-pages@v5
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: 'Deploy to GitHub Pages'
+        id: deployment
+        uses: actions/deploy-pages@v4
