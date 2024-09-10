@@ -1,0 +1,55 @@
+{
+  "name": "@o-az/template-vite-react-ts",
+  "version": "0.0.1",
+  "description": "A template for Vite x React 19 (SWC) x TypeScript",
+  "repository": "github:o-az/template-vite-react-ts",
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --build && vite build",
+    "preview": "vite preview",
+    "serve": "pnpm dlx serve@latest dist",
+    "test": "vitest --run",
+    "lint": "biome check . --write",
+    "format": "biome format . --write",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc",
+    "react-dom": "^19.0.0-rc"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@total-typescript/ts-reset": "^0.6.0",
+    "@types/node": "^22.5.2",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "tsx": "^4.19.0",
+    "typed-query-selector": "^2.12.0",
+    "typescript": "^5.5.4",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "author": "o-az (https://github.com/o-az)",
+  "keywords": [
+    "typescript",
+    "vite",
+    "react",
+    "node.js",
+    "esm",
+    "cjs",
+    "pnpm",
+    "vitest",
+    "template"
+  ],
+  "license": "GPT-v3-or-later"
+}

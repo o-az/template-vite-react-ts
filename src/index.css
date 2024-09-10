@@ -1,0 +1,27 @@
+@import url('https://esm.sh/modern-normalize/modern-normalize.css');
+
+html,
+body,
+div#root {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+  margin-top: 5rem;
+}
+
+header {
+  margin-bottom: auto;
+  text-align: right;
+  font-size: 0.75rem;
+  width: 100%;
+  padding: 0.45rem;
+}

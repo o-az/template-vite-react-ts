@@ -1,0 +1,150 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "vcs": {
+    "root": ".",
+    "enabled": true,
+    "clientKind": "git"
+  },
+  "files": {
+    "include": [
+      "*.ts",
+      "*.js",
+      "*.cjs",
+      "*.mjs",
+      "*.jsx",
+      "*.tsx",
+      "*.d.ts",
+      "*.json",
+      "*.jsonc",
+      "*.css"
+    ],
+    "ignoreUnknown": true,
+    "ignore": ["node_modules", "dist"]
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "css": {
+    "linter": {
+      "enabled": true
+    },
+    "formatter": {
+      "enabled": true,
+      "indentWidth": 2,
+      "lineWidth": 100,
+      "quoteStyle": "single",
+      "indentStyle": "space"
+    },
+    "parser": {
+      "allowWrongLineComments": true
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "lineWidth": 100,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "formatWithErrors": true,
+    "include": [
+      "*.ts",
+      "*.js",
+      "*.jsx",
+      "*.cjs",
+      "*.mjs",
+      "*.tsx",
+      "*.d.ts",
+      "*.json",
+      "*.jsonc",
+      "*.css"
+    ],
+    "ignore": ["node_modules", "dist", "_"]
+  },
+  "linter": {
+    "enabled": true,
+    "include": [
+      "*.ts",
+      "*.js",
+      "*.cjs",
+      "*.mjs",
+      "*.jsx",
+      "*.tsx",
+      "*.d.ts",
+      "*.json",
+      "*.jsonc",
+      "*.css"
+    ],
+    "rules": {
+      "all": true,
+      "style": {
+        "noDefaultExport": "off",
+        "noNamespaceImport": "off",
+        "useBlockStatements": "off",
+        "useSelfClosingElements": "off",
+        "noUnusedTemplateLiteral": "off"
+      },
+      "nursery": {
+        "all": true,
+        "noConsole": "off",
+        "useImportRestrictions": "off",
+        "noUndeclaredDependencies": "off",
+        "noShorthandPropertyOverrides": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off",
+        "noUselessEmptyExport": "off"
+      },
+      "correctness": {
+        "noNodejsModules": "off",
+        "noUnusedVariables": "off",
+        "noUndeclaredVariables": "off"
+      },
+      "suspicious": {
+        "noRedeclare": "off",
+        "noConsoleLog": "off",
+        "noExplicitAny": "off",
+        "noEmptyInterface": "off"
+      }
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    },
+    "formatter": {
+      "enabled": true,
+      "lineWidth": 100,
+      "indentWidth": 2
+    }
+  },
+  "javascript": {
+    "globals": ["NodeJS"],
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
+    "formatter": {
+      "enabled": true,
+      "lineWidth": 100,
+      "indentWidth": 2,
+      "indentStyle": "space",
+      "quoteStyle": "single",
+      "trailingCommas": "none",
+      "semicolons": "asNeeded",
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "overrides": [
+    {
+      "include": ["environment.d.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noNamespace": "off",
+            "useNamingConvention": "off"
+          }
+        }
+      }
+    }
+  ]
+}
