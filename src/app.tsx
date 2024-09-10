@@ -1,11 +1,7 @@
 import * as React from 'react'
 
 export function App() {
-  const [count, setCount] = React.useState(0)
-
-  const onIncrementClick = (_event: React.MouseEvent<HTMLButtonElement>) => {
-    setCount(count + 1)
-  }
+  const [count, setCount] = React.useState<number>(0)
 
   return (
     <main>
@@ -15,8 +11,19 @@ export function App() {
       <section>
         <h4>Counter: {count}</h4>
 
-        <button type='button' onClick={onIncrementClick}>
+        <button
+          type='button'
+          aria-label='Increment counter'
+          onClick={() => setCount(count + 1)}
+        >
           Increment
+        </button>
+        <button
+          type='button'
+          aria-label='Reset counter'
+          onClick={() => setCount(0)}
+        >
+          Reset
         </button>
       </section>
     </main>
