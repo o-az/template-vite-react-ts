@@ -13,6 +13,7 @@ export default defineConfig(config => {
   console.info(`Running in ${NODE_ENV} mode`)
 
   return {
+    base: '/',
     server: {
       port: Number(PORT)
     },
