@@ -34,6 +34,10 @@
   },
   "git.autofetch": true,
   "git.enableCommitSigning": true,
+  "files.exclude": {
+    ".swc": true,
+    "*.tsbuildinfo": true
+  },
   "search.exclude": {
     "pnpm-lock.yaml": true,
     "**/node_modules": true

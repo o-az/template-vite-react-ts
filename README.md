@@ -2,6 +2,8 @@ _NOTE: You are welcome to ask any questions if anything is unclear. Also feel fr
 
 # React 19 x Vite x SWC x TailwindCSS v4 x TypeScript Template
 
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://githubbox.com/o-az/template-vite-react-ts/tree/main)
+
 ---
 
 ## Stack
