@@ -1,4 +1,5 @@
-_NOTE: You are welcome to ask any questions if anything is unclear. Also feel free to post a discussion_
+> [!NOTE]
+> You are welcome to ask any questions if anything is unclear. Also feel free to post a discussion_
 
 # React 19 x Vite x SWC x TailwindCSS v4 x TypeScript Template
 
