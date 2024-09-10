@@ -26,6 +26,13 @@
   },
   "files.associations": {
     "biome.json": "jsonc",
+    "*.css": "tailwindcss",
     "settings.json": "jsonc"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
   }
 }

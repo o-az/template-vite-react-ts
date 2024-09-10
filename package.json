@@ -1,7 +1,7 @@
 {
   "name": "@o-az/template-vite-react-ts",
   "version": "0.0.1",
-  "description": "A template for Vite x React 19 (SWC) x TypeScript",
+  "description": "A template for Vite x React 19 (SWC) x TailwindCSS v4 x TypeScript",
   "repository": "github:o-az/template-vite-react-ts",
   "type": "module",
   "imports": {
@@ -19,8 +19,10 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@tailwindcss/vite": "4.0.0-alpha.23",
     "react": "^19.0.0-rc",
-    "react-dom": "^19.0.0-rc"
+    "react-dom": "^19.0.0-rc",
+    "tailwindcss": "4.0.0-alpha.23"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
@@ -45,9 +47,7 @@
     "typescript",
     "vite",
     "react",
-    "node.js",
-    "esm",
-    "cjs",
+    "tailwindcss",
     "pnpm",
     "vitest",
     "template"

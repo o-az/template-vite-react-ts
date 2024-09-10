@@ -85,6 +85,7 @@
       "nursery": {
         "all": true,
         "noConsole": "off",
+        "noReactSpecificProps": "off",
         "useImportRestrictions": "off",
         "noUndeclaredDependencies": "off",
         "noShorthandPropertyOverrides": "off"

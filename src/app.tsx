@@ -5,25 +5,36 @@ export function App() {
 
   return (
     <main>
-      <header>
-        <a href='https://github.com/o-az/template-vite-react-ts'>Source code</a>
+      <header className='mb-auto w-full text-right'>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          className='pr-2 text-blue-600 text-xs bg-amber-200 h-full'
+          href='https://github.com/o-az/template-vite-react-ts'
+        >
+          source code
+        </a>
       </header>
-      <section>
-        <h4>Counter: {count}</h4>
+      <section className='mx-auto mt-5 flex h-full max-w-36 flex-col items-center space-y-2'>
+        <h4 className='mb-3'>
+          counter: <span className='font-bold'>{count}</span>
+        </h4>
 
         <button
           type='button'
           aria-label='Increment counter'
           onClick={() => setCount(count + 1)}
+          className='w-full rounded bg-pink-300 px-4 py-2 font-bold text-black hover:scale-105 hover:cursor-pointer hover:bg-pink-400 hover:text-white'
         >
-          Increment
+          increment
         </button>
         <button
           type='button'
           aria-label='Reset counter'
           onClick={() => setCount(0)}
+          className='w-full rounded bg-blue-300 px-4 py-2 font-bold text-black hover:scale-105 hover:cursor-pointer hover:bg-blue-400 hover:text-white'
         >
-          Reset
+          reset
         </button>
       </section>
     </main>

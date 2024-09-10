@@ -1,9 +1,6 @@
 _NOTE: You are welcome to ask any questions if anything is unclear. Also feel free to post a discussion_
 
-# React 19x Vite x SWC x TypeScript Template
-
-_Requires __[Node.js LTS (v20 or later)](https://nodejs.org/en/blog/release/v20.8.1)__ and
-**[pnpm __v8__ or higher](https://pnpm.io/installation)**_
+# React 19x Vite x SWC x TailwindCSS v4 x TypeScript Template
 
 ---
 
@@ -11,6 +8,7 @@ _Requires __[Node.js LTS (v20 or later)](https://nodejs.org/en/blog/release/v20.
 
 - `React` 19 (with [`swc`](https://github.com/vitejs/vite-plugin-react-swc))
 - `vite`
+- `TailwindCSS v4`
 - `TypeScript`
 - `pnpm` package manager
 - `Biome` for linting and formatting
