@@ -93,6 +93,7 @@
       "nursery": {
         "all": true,
         "noProcessEnv": "off",
+        "useExplicitType": "off",
         "useImportRestrictions": "off"
       },
       "complexity": {
