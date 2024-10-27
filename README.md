@@ -30,12 +30,6 @@ git clone https://github.com/o-az/template-vite-react-ts.git && cd template-vite
 pnpm install
 ```
 
-### [Optional] Copy `.env.example` to `.env` and modify as needed
-
-```sh
-cp .env.example .env
-```
-
 ### Run development server
 
 ```sh

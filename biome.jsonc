@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": {
     "root": ".",
     "enabled": true,
@@ -92,11 +92,8 @@
       },
       "nursery": {
         "all": true,
-        "noConsole": "off",
-        "noReactSpecificProps": "off",
-        "useImportRestrictions": "off",
-        "noUndeclaredDependencies": "off",
-        "noShorthandPropertyOverrides": "off"
+        "noProcessEnv": "off",
+        "useImportRestrictions": "off"
       },
       "complexity": {
         "useLiteralKeys": "off",
@@ -108,10 +105,13 @@
         "noUndeclaredVariables": "off"
       },
       "suspicious": {
+        "noConsole": "off",
         "noRedeclare": "off",
         "noConsoleLog": "off",
         "noExplicitAny": "off",
-        "noEmptyInterface": "off"
+        "noEmptyInterface": "off",
+        "noReactSpecificProps": "off",
+        "noShorthandPropertyOverrides": "off"
       }
     }
   },

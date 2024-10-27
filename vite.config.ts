@@ -1,4 +1,3 @@
-import tailwindcss from '@tailwindcss/vite'
 import { defineConfig, loadEnv } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import reactPlugin from '@vitejs/plugin-react-swc'
@@ -17,11 +16,7 @@ export default defineConfig(config => {
     server: {
       port: Number(PORT)
     },
-    plugins: [
-      reactPlugin({ tsDecorators: true }),
-      tailwindcss(),
-      tsconfigPaths()
-    ],
+    plugins: [reactPlugin({ tsDecorators: true }), tsconfigPaths()],
     test: {
       silent: NODE_OPTIONS?.includes('--no-warnings')
     }
